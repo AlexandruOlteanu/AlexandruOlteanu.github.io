@@ -459,19 +459,19 @@ h6,
 }
 
 .display-1 {
-	font-size: 6rem;
+	font-size: 4rem;
 	font-weight: 300;
 	line-height: 1.2
 }
 
 @media (max-width: 1200px) {
 	.display-1 {
-		font-size: calc(1.725rem + 5.7vw)
+		font-size: calc(1.725rem + 5.7vw);
 	}
 }
 
 .display-2 {
-	font-size: 5.5rem;
+	font-size: 4rem;
 	font-weight: 300;
 	line-height: 1.2
 }
@@ -1459,8 +1459,8 @@ pre code {
 	}
 
 	.col-lg-3 {
-		flex: 0 0 25%;
-		max-width: 25%
+		flex: 0 0 33%;
+		max-width: 33%;
 	}
 
 	.col-lg-4 {
@@ -6618,7 +6618,7 @@ a.close.disabled {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: #fff;
-	text-align: center
+	text-align: left;
 }
 
 @keyframes spinner-border {
@@ -6696,7 +6696,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-	background-color: #F77D0A !important
+	background-color: #52bcaf !important
 }
 
 a.bg-primary:hover,
