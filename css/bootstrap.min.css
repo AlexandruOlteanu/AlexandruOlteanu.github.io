@@ -2185,11 +2185,17 @@ pre code {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #495057;
-	background-color: #fff;
+	background-color: #2B2E4A;
+	color:white; 
 	background-clip: padding-box;
 	border: 1px solid #ced4da;
 	border-radius: 0;
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+}
+
+input::placeholder {
+	color:white;
+	opacity:1;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2209,15 +2215,15 @@ pre code {
 }
 
 .form-control:focus {
-	color: #495057;
-	background-color: #fff;
+	color: white;
+	background-color: #2B2E4A;
 	border-color: #74d5ca;
 	outline: 0;
 	box-shadow: 0 0 0 .2rem #74d5ca;
 }
 
 .form-control::placeholder {
-	color: #6c757d;
+	color: white;
 	opacity: 1
 }
 
@@ -4075,6 +4081,11 @@ input[type="button"].btn-block {
 	border: 1px solid #ced4da;
 	border-radius: 0;
 	appearance: none
+}
+
+.custom-select {
+	background-color: #2B2E4A;
+	color: white;
 }
 
 .custom-select:focus {
