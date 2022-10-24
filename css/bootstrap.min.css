@@ -2211,9 +2211,9 @@ pre code {
 .form-control:focus {
 	color: #495057;
 	background-color: #fff;
-	border-color: #fbbf85;
+	border-color: #74d5ca;
 	outline: 0;
-	box-shadow: 0 0 0 .2rem rgba(247, 125, 10, 0.25)
+	box-shadow: 0 0 0 .2rem #74d5ca;
 }
 
 .form-control::placeholder {
@@ -3452,9 +3452,9 @@ input[type="button"].btn-block {
 	color: #8486A0;
 	text-align: left;
 	list-style: none;
-	background-color: #fff;
+	background-color: #2B2E4A;
 	background-clip: padding-box;
-	border: 1px solid rgba(0, 0, 0, 0.15)
+	border: 1px solid 2B2E4A
 }
 
 .dropdown-menu-left {
@@ -3622,7 +3622,7 @@ input[type="button"].btn-block {
 	padding: .25rem 1.5rem;
 	clear: both;
 	font-weight: 400;
-	color: #212529;
+	color: white;
 	text-align: inherit;
 	white-space: nowrap;
 	background-color: transparent;
@@ -3631,9 +3631,9 @@ input[type="button"].btn-block {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-	color: #16181b;
+	color: #52bcaf;
 	text-decoration: none;
-	background-color: #f8f9fa
+	background-color: #2B2E4A; 
 }
 
 .dropdown-item.active,
@@ -4078,9 +4078,9 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-	border-color: #fbbf85;
+	border-color: #74d5ca;
 	outline: 0;
-	box-shadow: 0 0 0 .2rem rgba(247, 125, 10, 0.25)
+	box-shadow: 0 0 0 .2rem #74d5ca;
 }
 
 .custom-select:focus::-ms-value {
