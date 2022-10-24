@@ -18,7 +18,7 @@
 	--white: #fff;
 	--gray: #6c757d;
 	--gray-dark: #343a40;
-	--primary: #F77D0A;
+	--primary: #52bcaf;
 	--secondary: #2B2E4A;
 	--success: #28a745;
 	--info: #17a2b8;
@@ -165,13 +165,13 @@ sup {
 }
 
 a {
-	color: #F77D0A;
+	color: #52bcaf;
 	text-decoration: none;
 	background-color: transparent
 }
 
 a:hover {
-	color: #af5806;
+	color: #74d5ca;
 	text-decoration: underline
 }
 
@@ -2708,16 +2708,20 @@ fieldset:disabled a.btn {
 	pointer-events: none
 }
 
+.nevsquare-logo {
+    width: 270px;
+}
+
 .btn-primary {
 	color: #fff;
-	background-color: #F77D0A;
-	border-color: #F77D0A
+	background-color: #52bcaf;
+	border-color: #52bcaf
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #d46a07;
-	border-color: #c76407
+	background-color: #74d5ca;
+	border-color: #74d5ca
 }
 
 .btn-primary:focus,
@@ -10415,7 +10419,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-	color: #F77D0A !important
+	color: #52bcaf !important
 }
 
 a.text-primary:hover,
