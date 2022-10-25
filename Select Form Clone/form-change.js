@@ -39,16 +39,12 @@ $('select').each(function () {
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $styledSelect.click(function (e) {
         e.stopPropagation();
-        var ok = 0;
         $('div.styledSelect.active').each(function () {
             $(this).removeClass('active').next('ul.options').hide();
-            $('div.select').removeClass('focus-color');
-            ok = 1;
+            $(this).removeClass('focus-color');
         });
-        if (!ok) {
-            $(this).toggleClass('active').next('ul.options').toggle();
-            $(this).toggleClass('focus-color');
-        }
+        $(this).toggleClass('active').next('ul.options').toggle();
+        $(this).toggleClass('focus-color');
     });
 
     // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
@@ -59,7 +55,6 @@ $('select').each(function () {
         $this.val($(this).attr('rel'));
         $('div.styledSelect').removeClass('focus-color');
         $list.hide();
-        /* alert($this.val()); Uncomment this for demonstration! */
     });
 
     // Hides the unordered list when clicking outside of it
