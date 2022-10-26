@@ -117,6 +117,10 @@ h6,
     }
 }
 
+.background-nav {
+    background-color:#2B2E4A;
+}
+
 .page-header {
     height: 400px;
     margin-bottom: 90px;
