@@ -39,12 +39,25 @@ $('select').each(function () {
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $styledSelect.click(function (e) {
         e.stopPropagation();
+        let ok = 0, ok2 = 0;
+        if (!(this.classList.contains('active'))) {
+            ok2 = 1;
+        }
         $('div.styledSelect.active').each(function () {
+            ok = 1;
             $(this).removeClass('active').next('ul.options').hide();
             $(this).removeClass('focus-color');
         });
-        $(this).toggleClass('active').next('ul.options').toggle();
-        $(this).toggleClass('focus-color');
+        if (!ok) {
+            $(this).toggleClass('active').next('ul.options').toggle();
+            $(this).toggleClass('focus-color');
+        }
+
+        if (ok2 && ok) {
+            $(this).toggleClass('active').next('ul.options').toggle();
+            $(this).toggleClass('focus-color');
+        }
+        
     });
 
     // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
