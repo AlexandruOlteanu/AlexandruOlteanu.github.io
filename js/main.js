@@ -28,6 +28,16 @@
     });
     
     
+    // Move from Benefit Now to Contact Us
+    $('.move-to-contact').click(function () {
+        let offsets = $('#contact-id').offset();
+        let top = offsets.top;
+        console.log(top); 
+        $('html, body').animate({scrollTop: top}, 1500, 'easeInOutExpo');
+
+        return false;
+    });
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -126,4 +136,42 @@
     });
     
 })(jQuery);
+
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+day -= 4;
+if (day < 1) {
+    day = 1;
+}
+// This arrangement can be altered based on how we want the date's format to appear.
+let currentDate = `${day}-${month}-${year}`;
+document.getElementById("first-date").appendChild(document.createTextNode(currentDate));
+day += 6;
+let maximum = 31;
+switch(month) {
+    case 2:
+        maximum = 28;
+        break;
+    case 4:
+        maximum = 30; 
+        break;
+    case 6:
+        maximum = 30;
+        break;
+    case 9: 
+        maximum = 30;
+    case 11: 
+        maximum = 30;
+    default:
+        break;
+}
+if (day > maximum) {
+    day -= maximum;
+}
+currentDate = `${day}-${month}-${year}`;
+document.getElementById("second-date").appendChild(document.createTextNode(currentDate));
 
