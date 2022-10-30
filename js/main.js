@@ -134,6 +134,11 @@
             }
         }
     });
+
+    // Open Menu Button on Mobile
+    $(".navbar-toggler").click(function() {
+            $('#nav-container').toggleClass("pushed");
+    });
     
 })(jQuery);
 
