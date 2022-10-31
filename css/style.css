@@ -384,13 +384,13 @@ transition-duration: 600ms;
 }
 
 
-.pushed .toggle-icon:hover .bar:nth-of-type(2) {
+.pushed .toggle-icon .bar:nth-of-type(2) {
 border-right-color: white;
-box-shadow: 0.2em 0 0.3em 0.05em #52bcaf;
+box-shadow: 0.1em 0 0.15em 0.025em #52bcaf;
 }
-.pushed .toggle-icon:hover .bar:nth-of-type(3) {
+.pushed .toggle-icon .bar:nth-of-type(3) {
 border-right-color: white;
-box-shadow: 0.2em 0 0.3em 0.05em #52bcaf;
+box-shadow: 0.1em 0 0.15em 0.025em #52bcaf;
 }
 
 /* Button Design  */
