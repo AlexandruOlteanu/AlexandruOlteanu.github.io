@@ -195,6 +195,6 @@ var typed_2 = new Typed(".auto-typed-2", {
     typeSpeed: 120,
 })
 var typed_3 = new Typed(".auto-typed-3", {
-    strings: ["Conquer your competition with high-end technologyes, from start to finish!"],
+    strings: ["Conquer your competition with high-end technologyes!"],
     typeSpeed: 120
 })
