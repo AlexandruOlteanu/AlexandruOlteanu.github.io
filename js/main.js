@@ -142,6 +142,8 @@
     
 })(jQuery);
 
+// Promotion Button Date
+
 const date = new Date();
 
 let day = date.getDate();
@@ -152,7 +154,7 @@ day -= 4;
 if (day < 1) {
     day = 1;
 }
-// This arrangement can be altered based on how we want the date's format to appear.
+
 let currentDate = `${day}-${month}-${year}`;
 document.getElementById("first-date").appendChild(document.createTextNode(currentDate));
 day += 6;
@@ -180,3 +182,19 @@ if (day > maximum) {
 currentDate = `${day}-${month}-${year}`;
 document.getElementById("second-date").appendChild(document.createTextNode(currentDate));
 
+// Typed Strings Animation
+
+var typed_1 = new Typed(".auto-typed-1", {
+    strings: ["We are Nevsquare!", "Where Expertise Builds Innovation!"],
+    typeSpeed: 120,
+    backSpeed: 50,
+    loop:true,
+})
+var typed_2 = new Typed(".auto-typed-2", {
+    strings: ["Build a durable and strong brand!"],
+    typeSpeed: 120,
+})
+var typed_3 = new Typed(".auto-typed-3", {
+    strings: ["Conquer your competition with high-end technologyes, from start to finish!"],
+    typeSpeed: 120
+})
