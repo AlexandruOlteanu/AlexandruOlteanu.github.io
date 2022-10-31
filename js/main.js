@@ -191,10 +191,14 @@ var typed_1 = new Typed(".auto-typed-1", {
     loop:true,
 })
 var typed_2 = new Typed(".auto-typed-2", {
-    strings: ["Build a durable and strong brand!"],
+    strings: ["Build a durable and strong brand!", "Target Specific Audience With Maximum Results!"],
     typeSpeed: 120,
+    backSpeed: 50,
+    loop:true
 })
 var typed_3 = new Typed(".auto-typed-3", {
-    strings: ["Conquer your competition with high-end technologyes!"],
-    typeSpeed: 120
+    strings: ["Conquer your competition with high-end technologyes!", "Improve Scalability and Performance!"],
+    typeSpeed: 120,
+    backSpeed: 50,
+    loop:true
 })
