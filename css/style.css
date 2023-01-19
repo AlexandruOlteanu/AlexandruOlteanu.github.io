@@ -400,3 +400,12 @@ button:focus {
 }
 
 /* Carousel Style  */
+
+
+.website-text-size {
+    font-size: 1.6rem;
+}
+
+.justify-text {
+    text-align: justify;
+}
