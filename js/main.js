@@ -136,7 +136,7 @@
     });
 
     // Open Menu Button on Mobile
-    $(".navbar-toggler").click(function() {
+    $(document).on('click', '.navbar-toggler', function() {
             $('#nav-container').toggleClass("pushed");
     });
     
