@@ -99,7 +99,7 @@
     let path = window.location.pathname;
     let file_name = path.split("/").pop();
     switch(file_name) {
-        case "home.html" :
+        case "index.html" :
             setActive("home");
             break;
         case "about.html" :
